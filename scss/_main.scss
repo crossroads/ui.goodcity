@@ -8,6 +8,10 @@
 
 .main-section {
   padding: 0 10px;
+
+  &.alt {
+    background: #dee4eb;
+  }
 }
 
 .row {
@@ -97,7 +101,14 @@ hr {
   font-size: rem-calc(18) !important;
 }
 
-
+.top-bar-link {
+  color: #a3aab6 !important;
+  font-size: rem-calc(14);
+  display: block;
+  margin-right: rem-calc(15);
+  float: right;
+  white-space: nowrap;
+}
 
 
 /* === Off Canvas === */
@@ -164,6 +175,42 @@ ul.off-canvas-list li a:hover  {
     padding-bottom: 200px;
   }
 }
+
+
+/* === Icon Bar === */
+
+.icon-bar-wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: rem-calc(-25);
+}
+
+.icon-bar .fa {
+  color: #536785;
+}
+
+.above-icon-bar {
+  margin: -25px -15px 25px -15px;
+}
+
+.message-wrap {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.message {
+  @include panel();
+  margin-bottom: rem-calc(15);
+  border-radius: 5px;
+  
+  p {
+    margin: 0;
+  }
+  
+  
+}
+
+
 
 /* === Page Specifc === */
 
@@ -257,6 +304,22 @@ ul.off-canvas-list li a:hover  {
   .thumb {
     padding-right: 16px;
     width: 76px;
+    font: 0/0 a;
+    vertical-align: top !important;
+  }
+
+  .avatar {
+    width: 50px;
+    padding-right: 10px;
+    vertical-align: top;
+    
+    img {
+      border-radius: 50%;
+      width: 40px !important;
+      height: 40px;
+      display: block;
+    }
+    
   }
 
   a {
@@ -265,7 +328,7 @@ ul.off-canvas-list li a:hover  {
     color: #a3aab6 !important;
   }
 
-  span {
+  > li > a > span {
     display: table-cell;
     vertical-align: middle;
   }
@@ -289,7 +352,69 @@ ul.off-canvas-list li a:hover  {
     background: url("../img/icon-edit.png") no-repeat right center;
     background-size: 24px 19px;
   }
+
+  &.list-activity {
+  
+    margin-left: -15px;
+    margin-right: -15px;
+  
+    li {
+      border-bottom: 1px solid #1c3b65;
+      margin: 0 !important;
+    }
+
+    > li > a > span {
+      padding: 15px;
+    }
+
+    .info p,
+    .info h3 {
+      //text-overflow: ellipsis;
+      //white-space: nowrap;
+    }
+    
+    .info {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+  }
+
 }
+
+.no-avatar {
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50%;
+  background: #ee4c4e;
+  font-weight: bold;
+  font-size: rem-calc(24);
+}
+
+.small-avatar {
+  line-height: 15px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50%;
+  background: #ee4c4e;
+  font-weight: bold;
+  font-size: rem-calc(10);
+  float: right;
+  top: -8px;
+  right: -5px;
+  position: relative;
+}
+
+
 
 .list-intro {
   text-align: left;
@@ -383,7 +508,6 @@ ul.off-canvas-list li a:hover  {
     height: auto;
   }
 }
-
 
 /* === Bottom content === */
 
