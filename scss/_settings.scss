@@ -126,7 +126,7 @@ $body-font-family: Museo300, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
-$secondary-color: transparent;
+$secondary-color: rgba(0,0,0,0);
 // $alert-color: #f04124;
 $alert-color: #f34d4f;
 // $success-color: #43AC6A;
@@ -698,9 +698,9 @@ $input-border-width: 2px;
 
 // We use these to style the prefix and postfix input elements
 // $input-prefix-bg: scale-color($white, $lightness: -5%);
-$input-prefix-bg: transparent;
+$input-prefix-bg: rgba(0,0,0,0);
 // $input-prefix-border-color: scale-color($white, $lightness: -20%);
-$input-prefix-border-color: transparent;
+$input-prefix-border-color: rgba(0,0,0,0);
 // $input-prefix-border-size: 1px;
 $input-prefix-border-size: 0;
 // $input-prefix-border-type: solid;
@@ -737,12 +737,12 @@ $input-error-message-font-size: rem-calc(18);
 // We use these to style the icon-bar and items
 // $include-html-icon-bar-classes: $include-html-classes;
 // $icon-bar-bg: $oil;
-$icon-bar-bg: transparent;
+$icon-bar-bg: rgba(0,0,0,0);
 // $icon-bar-font-color: $white;
 $icon-bar-font-color: #a3aab6;
 // $icon-bar-font-size: 1rem;
 // $icon-bar-hover-color: $primary-color;
-$icon-bar-hover-color: transparent;
+$icon-bar-hover-color: rgba(0,0,0,0);
 // $icon-bar-icon-color: $white;
 // $icon-bar-icon-size: 1.875rem;
 $icon-bar-icon-size: 1.5rem;
@@ -897,7 +897,7 @@ $off-canvas-label-text-transform: none;
 // $off-canvas-label-font-weight: $font-weight-bold;
 $off-canvas-label-font-weight: normal;
 // $off-canvas-label-bg: $tuatara;
-$off-canvas-label-bg: transparent;
+$off-canvas-label-bg: rgba(0,0,0,0);
 // $off-canvas-label-border-top: 1px solid scale-color($tuatara, $lightness: 14%);
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
@@ -959,7 +959,7 @@ $tabbar-hamburger-icon-gap: 7px;
 // $orbit-caption-height: auto;
 
 // We use these to control the left/right nav styles
-// $orbit-nav-bg: transparent;
+// $orbit-nav-bg: rgba(0,0,0,0);
 // $orbit-nav-bg-hover: rgba(0,0,0,0.3);
 // $orbit-nav-arrow-color: $white;
 // $orbit-nav-arrow-color-hover: $white;
@@ -1011,7 +1011,7 @@ $tabbar-hamburger-icon-gap: 7px;
 // We use these for disabled anchor links
 // $pagination-link-unavailable-cursor: default;
 // $pagination-link-unavailable-font-color: $aluminum;
-// $pagination-link-unavailable-bg-active: transparent;
+// $pagination-link-unavailable-bg-active: rgba(0,0,0,0);
 
 // We use these for currently selected anchor links
 // $pagination-link-current-background: $primary-color;
